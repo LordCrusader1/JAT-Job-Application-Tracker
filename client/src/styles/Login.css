@@ -1,0 +1,43 @@
+/* Login.css or App.css */
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full viewport height */
+    background-color: #f8f9fa; /* Optional: light background for better visuals */
+  }
+  
+  .login-form {
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #ffffff; /* Optional: white background */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  /* Login.css or App.css */
+.register-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full viewport height */
+    background-color: #f8f9fa; /* Optional: light background for better visuals */
+  }
+  
+  .register-form {
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #ffffff; /* Optional: white background */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  .dashboard-container {
+    display: flex;
+    justify-content: center;
+    align-items: top;
+    height: 100vh; /* Full viewport height */
+    background-color: #f8f9fa; /* Optional: light background for better visuals */
+  }
+  
+  
