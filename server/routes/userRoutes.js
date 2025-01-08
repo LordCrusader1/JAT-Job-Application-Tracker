@@ -4,6 +4,13 @@ const bcrypt = require('bcrypt');
 const jwt = require('jsonwebtoken');
 const User = require('../models/user');
 const verifyToken = require('../middleware/authMiddleware');
+const jobController = require('../controllers/jobController'); // Adjust the path
+
+// Assuming you have an authentication middleware
+const authenticate = require('../middleware/authMiddleware');
+
+router.post('/jobs', authenticate, jobController.createJob);
+router.get('/jobs', authenticate, jobController.getJobs);
 
 
 // Environment variables for secrets

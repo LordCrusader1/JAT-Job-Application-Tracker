@@ -2,6 +2,13 @@ const express = require('express');
 const router = express.Router();
 const JobApplication = require('../models/JobApplication');
 const verifyToken = require('../middleware/authMiddleware');
+const jobController = require('../controllers/jobController'); // Adjust the path
+
+// Assuming you have an authentication middleware
+const authenticate = require('../middleware/authMiddleware');
+
+router.post('/jobs', authenticate, jobController.createJob);
+router.get('/jobs', authenticate, jobController.getJobs);
 
 // Dashboard route (optional test)
 router.get('/dashboard', verifyToken, (req, res) => {
